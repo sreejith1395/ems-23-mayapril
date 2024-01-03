@@ -35,6 +35,8 @@ emsServer.use(express.json())
 
 emsServer.use(router)
 
+emsServer.use('/uploads',express.static('./uploads'))
+
 // customize port for server 
 
 const PORT=4000||process.env.PORT
